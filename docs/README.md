@@ -1,3 +1,5 @@
+
+
 # Documentation :book:
 ## Introduction
 The Inductive miner visualizer is an interactive, user-friendly and

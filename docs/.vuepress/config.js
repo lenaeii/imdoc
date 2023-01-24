@@ -1,27 +1,43 @@
 import { defaultTheme } from '@vuepress/theme-default'
+import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 export default {
     base: '/imdoc/',
     title: 'Inductive Miner Visualizer',
-    theme: defaultTheme({
+    plugins: [
+      externalLinkIconPlugin({
+  
+      }),
+
+      searchPlugin({
+        // options
+      }),
+    ],
+    theme: defaultTheme(
         
-        navbar: [
+
+        {navbar: [
         // NavbarItem
-        {
-          text: 'Nav',
-          link: '/foo/',
+     {
+         text: 'Github',
+         link: 'https://github.com/',
         },
         // NavbarGroup
-        {
-          text: 'Drop-down',
-          children: ['/group/foo.md', '/group/bar.md'],
+
+        
+
+       {
+         text: 'Drop-down',
+         children: ['Education.md', 'README.md'],
         },
         // string - page file path
         'File',
       ],
 
       
-    }),
+    }
+  ),
 
     
   }
